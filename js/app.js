@@ -1,4 +1,4 @@
-(function () {
+п»ї(function () {
   "use strict";
 
 
@@ -51,11 +51,11 @@
 
     if (navigator.onLine) {
       searchBox.removeAttribute("disabled");
-      searchBox.setAttribute("placeholder", "Поиск");
+      searchBox.setAttribute("placeholder", "пїЅпїЅпїЅпїЅпїЅ");
     } else {
       closeSuggestions();
       searchBox.setAttribute("disabled", "disabled");
-      searchBox.setAttribute("placeholder", "Нет соединения! Используйте историю");
+      searchBox.setAttribute("placeholder", "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ! пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
     }
   }
 
