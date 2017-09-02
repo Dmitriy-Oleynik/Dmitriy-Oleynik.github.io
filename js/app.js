@@ -20,7 +20,7 @@
   }
 
   // localStorage keys
-  var lsHistoryID = "r3search-ls-history";
+  var lsHistoryID = "oleynikDL-ls-history";
 
 
   // DOM references

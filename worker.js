@@ -12,14 +12,14 @@
 
 
   // Cache name definitions
-  var cacheNameStatic = "r3search-static-v4";
-  var cacheNameWikipedia = "r3search-wikipedia-v1";
-  var cacheNameTypekit = "r3search-typekit-v1";
+  var cacheNameStatic = "static-v4";
+  var cacheNameWikipedia = "wikipedia-v1";
+  //var cacheNameTypekit = "r3search-typekit-v1";
 
   var currentCacheNames = [
     cacheNameStatic,
     cacheNameWikipedia,
-    cacheNameTypekit
+    //cacheNameTypekit
   ];
 
 
@@ -81,9 +81,10 @@
               } else if (response.type === "opaque") { // if response isn"t from our origin / doesn"t support CORS
                 if (requestURL.hostname.indexOf(".wikipedia.org") > -1) {
                   shouldCache = cacheNameWikipedia;
-                } else if (requestURL.hostname.indexOf(".typekit.net") > -1) {
-                  shouldCache = cacheNameTypekit;
-                } else {
+                } //else if (requestURL.hostname.indexOf(".typekit.net") > -1) {
+                //  shouldCache = cacheNameTypekit;
+              //}
+              else {
                   // just let response pass through, don"t cache
                 }
 
