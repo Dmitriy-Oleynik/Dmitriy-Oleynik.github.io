@@ -242,7 +242,7 @@
       showsuggestionsLoading();
       openSuggestions();
 
-      jsonp("//en.wikipedia.org/w/api.php", {
+      jsonp("//ru.wikipedia.org/w/api.php", {
         format: "json",
         action: "opensearch",
         search: query,
@@ -298,7 +298,7 @@
     articleLink.innerHTML = "";
     showArticleLoading();
 
-    jsonp("//en.wikipedia.org/w/api.php", {
+    jsonp("//ru.wikipedia.org/w/api.php", {
       format: "json",
       action: "query",
       continue: "",
@@ -344,7 +344,7 @@
       articleContent.innerHTML += extract;
       articleTitle.textContent = titleText;
 
-      url = "http://en.wikipedia.org/wiki/" + titleText;
+      url = "http://ru.wikipedia.org/wiki/" + titleText;
       link = document.createElement("a");
       link.textContent = url;
       link.setAttribute("href", url);
