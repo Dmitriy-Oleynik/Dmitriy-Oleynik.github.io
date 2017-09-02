@@ -51,11 +51,11 @@
 
     if (navigator.onLine) {
       searchBox.removeAttribute("disabled");
-      searchBox.setAttribute("placeholder", "�����");
+      searchBox.setAttribute("placeholder", "Поиск");
     } else {
       closeSuggestions();
       searchBox.setAttribute("disabled", "disabled");
-      searchBox.setAttribute("placeholder", "��� ����������! ����������� �������");
+      searchBox.setAttribute("placeholder", "Нет соединения! Попробуйте историю поиска");
     }
   }
 
