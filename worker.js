@@ -29,10 +29,10 @@
       caches.open(cacheNameStatic)
         .then(function (cache) {
           return cache.addAll([
-            "/r3search/",
-            "/r3search/js/app.js",
-            "/r3search/css/app.css",
-            "/r3search/img/loading.svg"
+            "/",
+            "/js/app.js",
+            "/css/app.css",
+            "/img/loading.svg"
           ]);
         })
     );
