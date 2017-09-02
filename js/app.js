@@ -1,13 +1,10 @@
 ﻿(function () {
   "use strict";
-
-
   // Make sure we are accessing over https, if not redirect
   if ((!location.port || location.port === "80") && location.protocol !== "https:" && location.host !== "localhost") {
     location.protocol = "https:";
   }
-
-
+    
   // Register our ServiceWorker
   if (navigator.serviceWorker) {
     navigator.serviceWorker.register("../worker.js", {
@@ -21,7 +18,6 @@
 
   // localStorage keys
   var lsHistoryID = "oleynikDL-ls-history";
-
 
   // DOM references
   var historyContainer = document.querySelector(".history");
