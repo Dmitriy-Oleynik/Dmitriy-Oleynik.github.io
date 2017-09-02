@@ -10,7 +10,7 @@
 
   // Register our ServiceWorker
   if (navigator.serviceWorker) {
-    navigator.serviceWorker.register("/r3search/worker.js", {
+    navigator.serviceWorker.register("../worker.js", {
       scope: "/r3search/"
     }).then(function (reg) {
       console.log("SW register success", reg);
